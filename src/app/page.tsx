@@ -93,7 +93,7 @@ const SearchForm = ({
   handleSubmit: (e: FormEvent<HTMLFormElement>) => void;
 }) => (
   <form
-    className="max-w-xl mx-auto px-5 flex gap-4 items-center"
+    className="max-w-xl mx-auto px-5 flex flex-col md:flex-row gap-4 items-start md:items-center"
     onSubmit={handleSubmit}
   >
     <label>
