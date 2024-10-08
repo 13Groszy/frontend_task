@@ -140,11 +140,8 @@ const MovieItem = ({ movie }: { movie: Movie }) => (
   </div>
 );
 
-const MovieList = ({
-  movies,
-  results,
-  fetchData,
-}: {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const MovieList = ({ movies,results, fetchData,}: {
   movies: Movie[];
   results: number;
   fetchData: () => void;
