@@ -63,7 +63,7 @@ const fetchData = async (
 ): Promise<void> => {
   setLoading(true);
   const response = await fetch(
-    `http://www.omdbapi.com/?s=${title}&type=${type}&apikey=${process.env.NEXT_PUBLIC_OMDB_API_KEY}`
+    `https://www.omdbapi.com/?s=${title}&type=${type}&apikey=${process.env.NEXT_PUBLIC_OMDB_API_KEY}`
   );
   const data = await response.json();
 
